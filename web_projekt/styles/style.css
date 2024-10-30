@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    padding: 0,
+    padding: 0;
 }
 html, body{
     height: 100%;
@@ -23,17 +23,15 @@ body{
     left: 50%;
     margin-left: -499px;
     top: 50px;
-    transition: 0.5s;
 }
 .link{
     text-decoration: none;
     color: black;
     transition: 0.5s;
 }
-/*.link:hover{
-    font-weight: bolder;
+.link:hover{
+    color: #fb8a00;
 }
-*/
 #title h1{
     width: max-content;
     box-sizing: border-box;
@@ -261,7 +259,7 @@ select:hover{
 #button{
     margin-top: 55px;
 }
-button{
+#gumb{
     height: 60px;
     width: 450px;
     position: relative;
@@ -275,7 +273,7 @@ button{
     border-radius: 10px;
     transition: 0.7s;
 }
-button:hover{
+#gumb:hover{
     background-color: black;
     color: white;
 }

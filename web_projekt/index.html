@@ -6,28 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
-    <script src="scripts/script.js"></script>
-    <script src="https://unpkg.com/imask"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Letalske vozovnice</title>
 </head>
 
 <body>
-    <form>
-        <div id="pageTitle">
-            <div id="title"><h1><a href="index.html" target="_self" class="link">InterAir</a></h1></div>
+    <div id="pageTitle">
+        <div id="title">
+            <h1><a href="index.html" target="_self" class="link">InterAir</a></h1>
         </div>
-        <div id="main">
+    </div>
+    <div id="main">
+        <form id="forma" method="get">
             <div id="titleDiv">
                 <h2>Nakup Letalske Vozovnice</h2>
             </div>
             <div id="body">
-                <div id="naslovEna"><h3>Smer leta<span class="obvezno">*</span></h3></div>
+                <div id="naslovEna">
+                    <h3>Smer leta<span class="obvezno">*</span></h3>
+                </div>
                 <div id="tripType">
                     <div id="oneWay">
-                        <label for="first" class="radio">Enosmerni</label><input type="radio" id="first" name="smer" value="enosmerni" onclick="showHidden2()">
+                        <label for="first" class="radio">Enosmerni</label><input type="radio" id="first" name="smer"
+                            value="enosmerni" onclick="showHidden2()">
                     </div>
                     <div id="twoWay">
-                        <label for="second" class="radio">Povratni</label><input type="radio" id="second" name="smer" value="povratni" onclick="showHidden2()">
+                        <label for="second" class="radio">Povratni</label><input type="radio" id="second" name="smer"
+                            value="povratni" onclick="showHidden2()">
                     </div>
                 </div>
                 <div id="naslovDva">
@@ -35,27 +40,35 @@
                 </div>
                 <div id="stevilo">
                     <div id="enoOsebna">
-                        <label for="ena" class="radio">Osebna</label><input type="radio" id="ena" name="steviloOseb" value="enoosebna" onclick="showHidden()">
+                        <label for="ena" class="radio">Osebna</label><input type="radio" id="ena" name="steviloOseb"
+                            value="enoosebna" onclick="showHidden()">
                     </div>
                     <div id="Vecosebna">
-                        <label for="vec" class="radio">Večosebna</label><input type="radio" id="vec" name="steviloOseb" value="vecosebna" onclick="showHidden()">
+                        <label for="vec" class="radio">Večosebna</label><input type="radio" id="vec" name="steviloOseb"
+                            value="vecosebna" onclick="showHidden()">
                     </div>
                 </div>
                 <div id="steviloNum">
                     <div id="odrasli">
-                        <label for="ime" class="title">Število odraslih<span class="obvezno">*</span></label><input type="text" id="ime">
+                        <label for="ime" class="title">Število odraslih<span class="obvezno">*</span></label><input
+                            type="text" id="ime">
                     </div>
                     <div id="mladoletni">
-                        <label for="priimek" class="title">Število mladoletnih<span class="obvezno">*</span></label><input type="text" id="priimek">
+                        <label for="priimek" class="title">Število mladoletnih<span
+                                class="obvezno">*</span></label><input type="text" id="priimek">
                     </div>
                 </div>
                 <div id="prihodOdhod">
-                    <div id="odhod"><label for="odInput" class="dateTitle">Datum odhoda<span class="obvezno">*</span></label><input type="date" id="odInput"></div>
-                    <div id="prihod"><label for="prInput" class="dateTitle">Datum povratka<span class="obvezno">*</span></label><input type="date" id="prInput"></div>
+                    <div id="odhod"><label for="odInput" class="dateTitle">Datum odhoda<span
+                                class="obvezno">*</span></label><input type="date" id="odInput"></div>
+                    <div id="prihod"><label for="prInput" class="dateTitle">Datum povratka<span
+                                class="obvezno">*</span></label><input type="date" id="prInput"></div>
                 </div>
                 <div id="odPriDestinacija">
-                    <div id="odhodDes"><label for="od" class="title">Kraj odhoda<span class="obvezno">*</span></label><input type="text" id="od"></div>
-                    <div id="prihodDes"><label for="pri" class="title">Kraj prihoda<span class="obvezno">*</span></label><input type="text" id="pri"></div>
+                    <div id="odhodDes"><label for="od" class="title">Kraj odhoda<span
+                                class="obvezno">*</span></label><input type="text" id="od"></div>
+                    <div id="prihodDes"><label for="pri" class="title">Kraj prihoda<span
+                                class="obvezno">*</span></label><input type="text" id="pri"></div>
                 </div>
                 <div id="razred">
                     <div id="naslovTri">
@@ -70,11 +83,12 @@
                         </select>
                     </div>
                 </div>
-                <div id="button">
-                    <button type="submit" onclick="getPodatki()">Kupi</button>
-            </div>
+        </form>
+        <div id="button">
+            <button id="gumb" type="submit" onclick="uspesno()">Kupi</button>
         </div>
-    </form>
+    </div>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
