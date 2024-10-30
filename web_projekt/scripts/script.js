@@ -19,9 +19,3 @@ function showHidden2(){
         b = false;
     }
 }
-function getPodatki(){
-    const smerLeta = (document.getElementById('input[name="smer"]:checked')).value;
-    const stOseb = (document.getElementById('input[name="steviloOseb"]:checked')).value;
-    const datumOdhoda = (document.getElementById("odInput")).value;
-    
-}
