@@ -38,7 +38,7 @@ body{
     position: relative;
     left: 50%;
     margin-left: -115.515px;
-    font-size: 4rem;
+    font-size: 64px;
     font-family: fancy;
 }
 #main{
@@ -62,7 +62,6 @@ body{
     font-family: fancy;
     src: url("fonts/times\ new\ roman\ bold\ italic.ttf");
 }
-
 .obvezno{
     color: red;
 }
@@ -92,7 +91,7 @@ body{
     margin-bottom: 10px;
     position: relative;
     left: 50%;
-    margin-left: -47px;
+    margin-left: -42.72px;
 }
 .radio{
     font-family: fancy;
@@ -276,4 +275,372 @@ select:hover{
 #gumb:hover{
     background-color: black;
     color: white;
+}
+@media screen and (max-width: 600px) {
+    #pageTitle{
+        width: 798px;
+        margin-left: -399px;
+        top: 10px;
+    }
+    #title h1{
+        font-size: 35.2px;
+        margin-left: -72px;
+    }
+    #main{
+        width: 798px;
+        height: 488px;
+        margin-left: -399px;
+        margin-top: -244px;
+    }
+    #titleDiv h2{
+        font-size: 25px;
+    }
+    #naslovEna h3{
+        font-size: 16.72px;
+    }
+    #naslovEna{
+        margin-left: -46px;
+    }
+    #naslovDva h3{
+        font-size: 16.72px;
+    }
+    #naslovDva{
+        margin-left: -64px;
+    }
+    #naslovTri h3{
+        font-size: 16.72px;
+    }
+    #naslovTri{
+        margin-left: -110px;
+    }
+    #body{
+        margin-top: 20px;
+    }
+    .radio{
+        font-size: 16px;
+    }
+    .title{
+        font-size: 16px;
+    }
+    .dateTitle{
+        font-size: 16px;
+    }
+    input[type=text]{
+        font-size: small;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    input[type=radio]{
+        width: 13px;
+        height: 13px;
+    }
+    select{
+        width: 220px;
+        height: 30px;
+    }
+    #dropdown{
+        margin-left: -110px;
+    }
+    #gumb{
+        width: 350px;
+        height: 40px;
+        margin-left: -175px;
+    }
+    #tripType{
+        margin-bottom: 15px;
+    }
+    #stevilo{
+        margin-bottom: 15px;
+    }
+    #steviloNum{
+        margin-bottom: 15px;
+    }
+    #prihodOdhod{
+        margin-bottom: 15px;
+    }
+    #razred{
+        margin-top: 10px;
+    }
+    #button{
+        margin-top: 30px;
+    }
+    #gumb{
+        font-size: medium;
+    }
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+    #pageTitle{
+        width: 798px;
+        margin-left: -399px;
+        top: 10px;
+    }
+    #title h1{
+        font-size: 35.2px;
+        margin-left: -72px;
+    }
+    #main{
+        width: 798px;
+        height: 488px;
+        margin-left: -399px;
+        margin-top: -244px;
+    }
+    #titleDiv h2{
+        font-size: 25px;
+    }
+    #naslovEna h3{
+        font-size: 16.72px;
+    }
+    #naslovEna{
+        margin-left: -46px;
+    }
+    #naslovDva h3{
+        font-size: 16.72px;
+    }
+    #naslovDva{
+        margin-left: -64px;
+    }
+    #naslovTri h3{
+        font-size: 16.72px;
+    }
+    #naslovTri{
+        margin-left: -110px;
+    }
+    #body{
+        margin-top: 20px;
+    }
+    .radio{
+        font-size: 16px;
+    }
+    .title{
+        font-size: 16px;
+    }
+    .dateTitle{
+        font-size: 16px;
+    }
+    input[type=text]{
+        font-size: small;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    input[type=radio]{
+        width: 13px;
+        height: 13px;
+    }
+    select{
+        width: 220px;
+        height: 30px;
+    }
+    #dropdown{
+        margin-left: -110px;
+    }
+    #gumb{
+        width: 350px;
+        height: 40px;
+        margin-left: -175px;
+    }
+    #tripType{
+        margin-bottom: 15px;
+    }
+    #stevilo{
+        margin-bottom: 15px;
+    }
+    #steviloNum{
+        margin-bottom: 15px;
+    }
+    #prihodOdhod{
+        margin-bottom: 15px;
+    }
+    #razred{
+        margin-top: 10px;
+    }
+    #button{
+        margin-top: 30px;
+    }
+    #gumb{
+        font-size: medium;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+    #pageTitle{
+        width: 798px;
+        margin-left: -399px;
+        top: 10px;
+    }
+    #title h1{
+        font-size: 35.2px;
+        margin-left: -72px;
+    }
+    #main{
+        width: 798px;
+        height: 488px;
+        margin-left: -399px;
+        margin-top: -244px;
+    }
+    #titleDiv h2{
+        font-size: 25px;
+    }
+    #naslovEna h3{
+        font-size: 16.72px;
+    }
+    #naslovEna{
+        margin-left: -46px;
+    }
+    #naslovDva h3{
+        font-size: 16.72px;
+    }
+    #naslovDva{
+        margin-left: -64px;
+    }
+    #naslovTri h3{
+        font-size: 16.72px;
+    }
+    #naslovTri{
+        margin-left: -110px;
+    }
+    #body{
+        margin-top: 20px;
+    }
+    .radio{
+        font-size: 16px;
+    }
+    .title{
+        font-size: 16px;
+    }
+    .dateTitle{
+        font-size: 16px;
+    }
+    input[type=text]{
+        font-size: small;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    input[type=radio]{
+        width: 13px;
+        height: 13px;
+    }
+    select{
+        width: 220px;
+        height: 30px;
+    }
+    #dropdown{
+        margin-left: -110px;
+    }
+    #gumb{
+        width: 350px;
+        height: 40px;
+        margin-left: -175px;
+    }
+    #tripType{
+        margin-bottom: 15px;
+    }
+    #stevilo{
+        margin-bottom: 15px;
+    }
+    #steviloNum{
+        margin-bottom: 15px;
+    }
+    #prihodOdhod{
+        margin-bottom: 15px;
+    }
+    #razred{
+        margin-top: 10px;
+    }
+    #button{
+        margin-top: 30px;
+    }
+    #gumb{
+        font-size: medium;
+    }
+}
+@media (min-width: 1440px) {
+    #pageTitle{
+        width: 798px;
+        margin-left: -399px;
+        top: 10px;
+    }
+    #title h1{
+        font-size: 35.2px;
+        margin-left: -72px;
+    }
+    #main{
+        width: 798px;
+        height: 488px;
+        margin-left: -399px;
+        margin-top: -244px;
+    }
+    #titleDiv h2{
+        font-size: 25px;
+    }
+    #naslovEna h3{
+        font-size: 16.72px;
+    }
+    #naslovEna{
+        margin-left: -46px;
+    }
+    #naslovDva h3{
+        font-size: 16.72px;
+    }
+    #naslovDva{
+        margin-left: -64px;
+    }
+    #naslovTri h3{
+        font-size: 16.72px;
+    }
+    #naslovTri{
+        margin-left: -110px;
+    }
+    #body{
+        margin-top: 20px;
+    }
+    .radio{
+        font-size: 16px;
+    }
+    .title{
+        font-size: 16px;
+    }
+    .dateTitle{
+        font-size: 16px;
+    }
+    input[type=text]{
+        font-size: small;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    input[type=radio]{
+        width: 13px;
+        height: 13px;
+    }
+    select{
+        width: 220px;
+        height: 30px;
+    }
+    #dropdown{
+        margin-left: -110px;
+    }
+    #gumb{
+        width: 350px;
+        height: 40px;
+        margin-left: -175px;
+    }
+    #tripType{
+        margin-bottom: 15px;
+    }
+    #stevilo{
+        margin-bottom: 15px;
+    }
+    #steviloNum{
+        margin-bottom: 15px;
+    }
+    #prihodOdhod{
+        margin-bottom: 15px;
+    }
+    #razred{
+        margin-top: 10px;
+    }
+    #button{
+        margin-top: 30px;
+    }
+    #gumb{
+        font-size: medium;
+    }
 }

@@ -26,18 +26,21 @@
                     <h3>Smer leta<span class="obvezno">*</span></h3>
                 </div>
                 <div id="tripType">
-                    <div id="oneWay">
-                        <label for="first" class="radio">Enosmerni</label><input type="radio" id="first" name="smer"
-                            value="enosmerni" onclick="showHidden2()">
-                    </div>
-                    <div id="twoWay">
-                        <label for="second" class="radio">Povratni</label><input type="radio" id="second" name="smer"
-                            value="povratni" onclick="showHidden2()">
-                    </div>
+                    <form class="forma" method="get">
+                        <div id="oneWay">
+                            <label for="first" class="radio">Enosmerni</label><input type="radio" id="first" name="smer"
+                                value="enosmerni" onclick="showHidden2()">
+                        </div>
+                        <div id="twoWay">
+                            <label for="second" class="radio">Povratni</label><input type="radio" id="second"
+                                name="smer" value="povratni" onclick="showHidden2()">
+                        </div>
+                    </form>
                 </div>
                 <div id="naslovDva">
                     <h3>Vrsta vozovnice<span class="obvezno">*</span></h3>
                 </div>
+
                 <div id="stevilo">
                     <div id="enoOsebna">
                         <label for="ena" class="radio">Osebna</label><input type="radio" id="ena" name="steviloOseb"
@@ -75,7 +78,7 @@
                         <h3>Razred<span class="obvezno">*</span></h3>
                     </div>
                     <div id="dropdown">
-                        <select id="selectRazred">
+                        <select>
                             <option value="ekonomski">Ekonomski</option>
                             <option value="premium ekonomski">Premium ekonomski</option>
                             <option value="poslovni">Poslovni</option>
@@ -83,10 +86,11 @@
                         </select>
                     </div>
                 </div>
+                <div id="button">
+                    <button id="gumb" type="submit" onclick="uspesno()">Kupi</button>
+                </div>
+            </div>
         </form>
-        <div id="button">
-            <button id="gumb" type="submit" onclick="uspesno()">Kupi</button>
-        </div>
     </div>
     <script src="scripts/script.js"></script>
 </body>
