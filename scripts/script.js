@@ -34,6 +34,7 @@ function uspesno() {
 
 function intro() {
     Swal.fire({
+        icon: 'info',
         title: 'O strani',
         html: "Razvijalec: Žan Markuža<br>Razred: 4.RB<br>Mentor: dr. Boštjan Vouk"
     });
