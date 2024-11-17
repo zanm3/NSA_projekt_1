@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+    width: 100%,
+}
+body{
+    background-image: url("../images/background_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#pageTitle{
+    background-color: white;
+    border-radius: 20px;
+    width: 998px;
+    opacity: 0.7;
+    box-shadow: 5px 10px 8px black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    left: 50%;
+    margin-left: -499px;
+    top: 50px;
+}
+#title h1{
+    width: max-content;
+    box-sizing: border-box;
+    position: relative;
+    left: 50%;
+    margin-left: -115.515px;
+    font-size: 64px;
+    font-family: fancy;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+#title h1:hover{
+    color: #fb8a00;
+}
+#main{
+    background-color: white;
+    border-radius: 20px;
+    height: 688px;
+    width: 998px;
+    box-shadow: 5px 10px 8px black;
+    position: absolute;
+    opacity: 0.7;
+    top: 50%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: -500px;
+    padding-top: 10px;
+}
+#body{
+    margin-top: 40px;
+}
+@font-face{
+    font-family: fancy;
+    src: url("fonts/times\ new\ roman\ bold\ italic.ttf");
+}
+.obvezno{
+    color: red;
+}
+#titleDiv{
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+}
+#titleDiv h2 {
+    font-family: fancy;
+    font-size: 40px;
+}
+#tripType{
+    width: 498px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    left: 50%;
+    margin-left: -249px;
+    margin-bottom: 25px;
+}
+#naslovEna{
+    box-sizing: border-box;
+    width: max-content;
+    margin-bottom: 10px;
+    position: relative;
+    left: 50%;
+    margin-left: -42.72px;
+}
+.radio{
+    font-family: fancy;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+}
+#stevilo{
+    width: 498px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    left: 50%;
+    margin-left: -249px;
+    margin-bottom: 25px;
+}
+#naslovDva{
+    width: fit-content;
+    margin-bottom: 10px;
+    position: relative;
+    left: 50%;
+    margin-left: -68px;
+}
+input[type=radio]{
+    accent-color: black;
+    height: 15px;
+    width: 15px;
+}
+.title{
+    font-family: fancy;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+}
+.dateTitle{
+    font-family: fancy;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 3px;
+}
+#steviloNum{
+    width: 538px;
+    box-sizing: border-box;
+    display:none;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    left: 50%;
+    margin-left: -269px;
+    margin-bottom: 25px;
+}
+input[type=text]{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: medium;
+    text-align: center;
+    transition: 0.7s;
+}
+input[type=text]:hover{
+    background-color: #e6e6e6;
+}
+input[type=text]:focus{
+    outline: none;
+    background-color: #e6e6e6;
+}
+::placeholder{
+    color: red;
+}
+#odrasli{
+    text-align: center;
+}
+#mladoletni{
+    text-align: center;
+}
+#prihodOdhod{
+    width: 538px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    left: 50%;
+    margin-left: -269px;
+    margin-bottom: 25px;
+}
+#odhod{
+    text-align: center;
+}
+#prihod{
+    text-align: center;
+    display: none;
+}
+input[type=date]{
+    border: none;
+    border-bottom: 2px solid black;
+    width: 198px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.7s;
+}
+input[type=date]:hover{
+    outline: none;
+    background-color: #e6e6e6;
+}
+#odPriDestinacija{
+    width: 538px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    left: 50%;
+    margin-left: -269px;
+}
+#odhodDes{
+    text-align: center;
+}
+#prihodDes{
+    text-align: center;
+}
+#razred{
+    width: 538px;
+    box-sizing: border-box;
+    position: relative;
+    left: 50%;
+    margin-left: -269px;
+    margin-top: 20px;
+}
+#dropdown{
+    box-sizing: border-box;
+    width: max-content;
+    position: relative;
+    left: 50%;
+    margin-left: -140px;
+}
+#naslovTri{
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    margin-left: -140px;
+    margin-bottom: 5px;
+}
+select{
+    font-family: fancy;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    width: 280px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: 0.7s;
+}
+select:hover{
+    background-color: #e6e6e6;
+}
+#button{
+    margin-top: 55px;
+}
+#gumb{
+    height: 60px;
+    width: 450px;
+    position: relative;
+    left: 50%;
+    margin-left: -225px;
+    border: 2px solid black;
+    background-color: white;
+    font-family: fancy;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+#gumb:hover{
+    background-color: black;
+    color: white;
+}
+#icon{
+    width: max-content;
+}
+.swal2-confirm{
+    background-color: black;
+} 
