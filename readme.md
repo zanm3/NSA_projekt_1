@@ -2,6 +2,7 @@
 
 ## Kratek Opis
 Projekt je spletna stran z imenom InterAir.
+
 Namenjena je nakupu letalske vozovnice.
 ---
 ## Tehnologije
