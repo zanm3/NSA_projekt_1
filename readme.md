@@ -10,3 +10,9 @@ Namenjena je nakupu letalske vozovnice.
 2. CSS
 3. JavaScript(front-end)
 4. DevOps
+
+## Funkcionalnosti
+Za boljši UX sem spletno stran opremil z različnimi funkcionalnostmi.
+
+Za prikaz različnih obvestil(preverjanje vnosa podatkov, ...) sem uporabil SweetAlert2.
+
