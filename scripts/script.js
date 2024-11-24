@@ -26,7 +26,7 @@ function uspesno() {
         title: 'Super!',
         text: 'Nakup vozovnice je bil uspešen'
     }).then((result) => {
-        if(result.isConfirmed){
+        if (result.isConfirmed) {
             form.submit();
         }
     });
@@ -63,21 +63,10 @@ function vreduDatum() {
     const datum1 = new Date(datumOdhoda);
     const datum2 = new Date(datumPrihoda);
 
-    if(datum1>datum2){
+    if (datum1 > datum2) {
         return false;
-    }else{
+    } else {
         return true;
-    }
-}
-
-function jeStevilka() {
-    const stOdraslih = document.getElementById("odrasliInput").value;
-    const stMladoletnih = document.getElementById("mladoletniInput").value;
-
-    if(!(isNaN(Number(stOdraslih)) || isNaN(Number(stMladoletnih)))){
-        return true;
-    }else{
-        return false;
     }
 }
 
@@ -85,17 +74,16 @@ function istiKraj() {
     const krajOdhoda = document.getElementById("od").value.trim();
     const krajPrihoda = document.getElementById("pri").value.trim();
 
-    if(!(krajOdhoda==krajPrihoda)){
+    if (!(krajOdhoda == krajPrihoda)) {
         return true;
-    }else{
+    } else {
         return false;
     }
 }
-
 function checks() {
     const forma = document.getElementById("forma");
 
-    forma.addEventListener("submit", function(event) {
+    forma.addEventListener("submit", function (event) {
         event.preventDefault();
 
         const smer1 = document.getElementById("first");
@@ -105,7 +93,6 @@ function checks() {
         const vrsta1 = document.getElementById("ena");
         const vrsta2 = document.getElementById("vec");
         const jeIzbranoRadio2 = vrsta1.checked || vrsta2.checked;
-
         const datumOdhoda = document.getElementById("odInput").value.trim() !== "";
         const krajOdhoda = document.getElementById("od").value.trim();
         const krajPrihoda = document.getElementById("pri").value.trim();
@@ -113,22 +100,31 @@ function checks() {
 
         const razred = document.getElementById("selectRazred").value.trim() !== "";
 
-        if (jeIzbranoRadio1 && jeIzbranoRadio2 && datumOdhoda && jeIzpolnjenKraj && razred) {
-            if (vreduDatum() && jeStevilka() && istiKraj()) {
+        if (jeIzbranoRadio1 && jeIzbranoRadio2 && validateNumbers() && datumOdhoda && jeIzpolnjenKraj && razred) {
+            if (vreduDatum() && istiKraj()) {
                 uspesno();
             } else {
                 Swal.fire({
-                    icon: 'warning',
+                    icon: 'error',
                     title: 'Napaka!',
                     text: 'Vpis podatkov je neveljaven!'
                 });
             }
         } else {
             Swal.fire({
-                icon: 'warning',
+                icon: 'error',
                 title: 'Napaka!',
                 text: 'Podatki, označeni z zvezdico so obvezni!'
             });
         }
     });
+}
+function validateNumbers() {
+        const vrsta2 = document.getElementById("vec"); // Multi-passenger option
+        if (vrsta2.checked) {
+            const steviloOdraslih = document.getElementById("odrasliInput").value.trim();
+            const steviloMladoletnih = document.getElementById("mladoletniInput").value.trim();
+            return steviloOdraslih !== "" && steviloMladoletnih !== "";
+        }
+        return true;
 }

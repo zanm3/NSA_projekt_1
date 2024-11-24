@@ -34,10 +34,10 @@ body{
     font-family: fancy;
     text-decoration: none;
     color: black;
-    transition: 0.5s;
+    transition:text-shadow 0.5s;
 }
 #title h1:hover{
-    color: #fb8a00;
+    text-shadow:  8px 10px 16px grey;
 }
 #main{
     background-color: white;
@@ -153,6 +153,14 @@ input[type=text]{
     text-align: center;
     transition: 0.7s;
 }
+input[type=number]{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: medium;
+    text-align: center;
+}
 input[type=text]:hover{
     background-color: #e6e6e6;
 }
@@ -161,7 +169,8 @@ input[type=text]:focus{
     background-color: #e6e6e6;
 }
 ::placeholder{
-    color: red;
+    color: rgb(77, 77, 77);
+    font-size: medium;
 }
 #odrasli{
     text-align: center;
